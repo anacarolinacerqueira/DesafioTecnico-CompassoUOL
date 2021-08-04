@@ -1,7 +1,7 @@
 # Desafio Técnico - Analista de Testes/QA 
 ### **(1) Mapa Mental dos Cenários + Gherkin**
 
-O Mapa Mental criado para definição dos cenários está na pasta `/planejamento`, em formato de imagem, e pode também ser visualizado [aqui](https://whimsical.com/fluxo-de-compra-funcionalidades-MRo67aSL9hYFqJgsWsgPtb)
+O [Mapa Mental](https://github.com/anacarolinacerqueira/DesafioTecnico-CompassoUOL/blob/main/planejamento/Mapa%20Mental%20-%20Fluxo%20de%20Compra%20(Funcionalidades).png) criado para definição dos cenários está na pasta `/planejamento`, em formato de imagem, e pode também ser visualizado [aqui](https://whimsical.com/fluxo-de-compra-funcionalidades-MRo67aSL9hYFqJgsWsgPtb)
 O Gherkin para as funcionalidades selecionadas para teste estão na pasta `\features`.
 ***
 ### **(2) Teste Prático: Trello REST API**
