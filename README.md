@@ -1,8 +1,12 @@
 # Desafio Técnico - Analista de Testes/QA 
 ### **(1) Mapa Mental dos Cenários + Gherkin**
 
-O [Mapa Mental](https://github.com/anacarolinacerqueira/DesafioTecnico-CompassoUOL/blob/main/planejamento/Mapa%20Mental%20-%20Fluxo%20de%20Compra%20(Funcionalidades).png) criado para definição dos cenários está na pasta `/planejamento`, em formato de imagem, e pode também ser visualizado [aqui](https://whimsical.com/fluxo-de-compra-funcionalidades-MRo67aSL9hYFqJgsWsgPtb)
-O Gherkin para as funcionalidades selecionadas para teste estão na pasta `\features`.
+O [Mapa Mental](https://github.com/anacarolinacerqueira/DesafioTecnico-CompassoUOL/blob/main/planejamento/Mapa%20Mental%20-%20Fluxo%20de%20Compra%20(Funcionalidades).png) criado para o planejamento dos cenários relacionados a um fluxo de compra, é a imagem que está na pasta `/planejamento`. O mapa também pode ser visualizado [aqui](https://whimsical.com/fluxo-de-compra-funcionalidades-MRo67aSL9hYFqJgsWsgPtb), com mais detalhes.
+
+As regras e comportamentos do fluxo utilizados no Mapa Mental e Gherkin foram baseados na [Loja Online da Natura](https://www.natura.com.br/), uma das clientes do portfólio da Compasso UOL.
+
+Os arquivos das funcionalidades descritas em Gherkin estão na pasta `/planejamento/features`. Não foram criadas todas as funcionalidades e cenários sinalizados no Mapa Mental, por limitação de tempo. Em alguns cenários, tentei deixar os dados como variáveis genéricas, o que facilitaria o reuso de código, em caso de automação futura.
+
 ***
 ### **(2) Teste Prático: Trello REST API**
 
@@ -48,3 +52,8 @@ Dentro das funcionalidades disponíveis para o endpoint **boards**, de forma a c
 **OBS**: Os testes de cada cenário podem ser acessados na pasta `/api/testes/collection.json`, e o resumo dos resutados pode ser visualizado abaixo:
 ***
 ### **(3 a 5) Estratégia de Testes + Priorização + KPIs**
+
+O documento com a descrição da Estratégia, Priorização e KPIs de teste, é o arquivo em formato PDF que está na pasta `/planejamento`.
+
+***
+**Autora**: [Ana Carolina Cerqueira](https://www.linkedin.com/in/anacarolinacerqueira/)
