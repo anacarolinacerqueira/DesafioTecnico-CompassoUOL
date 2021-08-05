@@ -1,0 +1,434 @@
+{
+	"info": {
+		"_postman_id": "a565b479-82be-4f59-b4b0-ef5a7b947827",
+		"name": "trello",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Criar Novo Quadro (sem parâmetro Name)",
+			"request": {
+				"auth": {
+					"type": "bearer"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "key",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{api-trello}}?key=",
+					"host": [
+						"{{api-trello}}"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criar Novo Quadro (sem parâmetro Key)",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "key",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{api-trello}}?name=FIrst Board",
+					"host": [
+						"{{api-trello}}"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "FIrst Board"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criar Novo Quadro (sem parâmetro Token)",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "key",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{api-trello}}?name=First Board&key=",
+					"host": [
+						"{{api-trello}}"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "First Board"
+						},
+						{
+							"key": "key",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criar Novo Quadro (válido)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "key",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{api-trello}}?key=&token=&name=Another Board",
+					"host": [
+						"{{api-trello}}"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": ""
+						},
+						{
+							"key": "token",
+							"value": ""
+						},
+						{
+							"key": "name",
+							"value": "Another Board"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Quadro Cadastrado (válido)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api-trello}}610b80dcd175c977c75cd157?token=&key=",
+					"host": [
+						"{{api-trello}}610b80dcd175c977c75cd157"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": ""
+						},
+						{
+							"key": "key",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Quadro Cadastrado (sem parâmetro key)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api-trello}}610b5f1bb83bc82764c3729d?token=",
+					"host": [
+						"{{api-trello}}610b5f1bb83bc82764c3729d"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Quadro Cadastrado (sem parâmetro token)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api-trello}}610b80dcd175c977c75cd157?key=",
+					"host": [
+						"{{api-trello}}610b80dcd175c977c75cd157"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criar Novo Quadro (válido) + Campo opcional",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "key",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{api-trello}}?key=&token=&name=Second Board&desc=Esta é a descrição do Segundo Quadro :)",
+					"host": [
+						"{{api-trello}}"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": ""
+						},
+						{
+							"key": "token",
+							"value": ""
+						},
+						{
+							"key": "name",
+							"value": "Second Board"
+						},
+						{
+							"key": "desc",
+							"value": "Esta é a descrição do Segundo Quadro :)"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Segundo Quadro Cadastrado (válido)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api-trello}}610b80dcd175c977c75cd157?token=&key=",
+					"host": [
+						"{{api-trello}}610b80dcd175c977c75cd157"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": ""
+						},
+						{
+							"key": "key",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Quadro com id não Cadastrado (Quadro inexistente)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api-trello}}613b5f1bb83bc82764c3729d?token=&key=",
+					"host": [
+						"{{api-trello}}613b5f1bb83bc82764c3729d"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": ""
+						},
+						{
+							"key": "key",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Alterar Nome de um Quadro Cadastrado (id válido)",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "{{api-trello}}610b80dcd175c977c75cd157?token=&key=&name=Board New Name",
+					"host": [
+						"{{api-trello}}610b80dcd175c977c75cd157"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": ""
+						},
+						{
+							"key": "key",
+							"value": ""
+						},
+						{
+							"key": "name",
+							"value": "Board New Name"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Excluir um Quadro (Sem passar parâmetro key)",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{api-trello}}610b80dcd175c977c75cd157?token=",
+					"host": [
+						"{{api-trello}}610b80dcd175c977c75cd157"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Excluir um Quadro (Sem passar parâmetro id)",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{api-trello}}?key=&token=",
+					"host": [
+						"{{api-trello}}"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": ""
+						},
+						{
+							"key": "token",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Excluir um Quadro (válido)",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{api-trello}}610b80dcd175c977c75cd157?key=&token=",
+					"host": [
+						"{{api-trello}}610b80dcd175c977c75cd157"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": ""
+						},
+						{
+							"key": "token",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "328c3051bf71d39184ecf9283e5e8133299bd198a50036e9358742cfe33cabdb",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
