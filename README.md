@@ -52,13 +52,17 @@ Dentro das funcionalidades disponíveis para o endpoint **boards**, e na tentati
 
 > **OBS**: No contexto da API do trello, no endpoint selecionado, todas as *requests* são feitas por passagem de parâmetros utilizando *PATH* ou *QUERY*, dessa forma não houve nenhum cenário no qual fosse possível enviar um *JSON*. 
 ***
-#### Para visualizar as requisições de Teste
+#### Visualizar as requisições de Teste
 
-A requests de cada cenário descrito acima pode ser acessadas utilizando o postman. Basta importar os arquivos `trello.postman_collection.json` e `trello.postman_environment.json`, que estão na pasta `/api/testes/`. Lembrando que **os parâmetros token e api-key precisam ser adicionados às requisições**.
+A requests de cada cenário descrito acima pode ser acessadas utilizando o postman. Basta importar o arquivo `trello.postman_collection.json`, que está na pasta `/api/testes/`. Lembrando que **os parâmetros token e api-key precisam ser adicionados às requisições**.
 
 ![Importação de Collection e Envoronment no Postman](https://cdn.discordapp.com/attachments/845388670390370344/872721216115466240/import-postman.png)
 
-Alguns arquivos JSON de exemplo, obtidos via requisição podem ser encontrados na mesma pasta.
+Exemplo de montagem de uma requisição da collection no Postman:
+
+![Exemplo montagem requisição](https://cdn.discordapp.com/attachments/845388670390370344/872869550541131796/exemplo_2_postman.png)
+
+Um arquivo JSON de exemplo, obtido via requisição pode ser encontrado na mesma pasta.
 
 ### **(3 a 5) Estratégia de Testes + Priorização + KPIs**
 
