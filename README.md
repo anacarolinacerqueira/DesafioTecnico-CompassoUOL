@@ -54,7 +54,7 @@ Dentro das funcionalidades disponíveis para o endpoint **boards**, e na tentati
 ***
 #### Visualizar as requisições de Teste
 
-A requests de cada cenário descrito acima pode ser acessadas utilizando o postman. Basta importar o arquivo `trello.postman_collection.json`, que está na pasta `/api/testes/`. Lembrando que **os parâmetros token e api-key precisam ser adicionados às requisições**.
+A requests de cada cenário descrito acima pode ser acessadas utilizando o postman. Basta importar o arquivo `trello.postman_collection.json`, que está na pasta `/api/`. Lembrando que **os parâmetros token e api-key precisam ser adicionados às requisições**.
 
 ![Importação de Collection e Envoronment no Postman](https://cdn.discordapp.com/attachments/845388670390370344/872721216115466240/import-postman.png)
 
